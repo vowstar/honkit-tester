@@ -1,5 +1,6 @@
 var tester = require('../lib/tester');
 var path = require('path');
+var cheerio = require('cheerio');
 
 jasmine.getEnv().defaultTimeoutInterval = 20000;
 // process.env.DEBUG = true;
@@ -10,7 +11,7 @@ describe(__filename, function() {
     .withContent('#test me \n\n![preview](preview.jpg)')
     .create()
     .then(function(result) {
-      expect(result.get('index.html').content).toEqual('<h1 id="test-me">test me</h1>\n<p><img src="preview.jpg" alt="preview"></p>');
+      expect(result.get('index.html').content).toEqual(cheerio.load('<h1 id="test-me">test me</h1>\n<p><img src="preview.jpg" alt="preview"></p>')('body').html().trim());
     })
     .fin(testDone)
     .done();
@@ -22,7 +23,7 @@ describe(__filename, function() {
       .withBookJson({"plugins": ["emphasize"]})
       .create()
       .then(function(result) {
-        expect(result.get('index.html').content).toEqual('<p>This text is <span class="pg-emphasize pg-emphasize-yellow" style="">highlighted !</span></p>');
+        expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is <span class="pg-emphasize pg-emphasize-yellow" style="">highlighted !</span></p>')('body').html().trim());
       })
       .fin(testDone)
       .done();
@@ -34,7 +35,7 @@ describe(__filename, function() {
       .withFile('includes/test.md', 'included from an external file!')
       .create()
       .then(function(result) {
-        expect(result.get('index.html').content).toEqual('<p>This text is included from an external file!</p>');
+        expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is included from an external file!</p>')('body').html().trim());
       })
       .fin(testDone)
       .done();
@@ -46,8 +47,8 @@ describe(__filename, function() {
       .withPage('second', 'Second page content')
       .create()
       .then(function(result) {
-        expect(result.get('index.html').content).toEqual('<p>First page content</p>');
-        expect(result.get('second.html').content).toEqual('<p>Second page content</p>');
+        expect(result.get('index.html').content).toEqual(cheerio.load('<p>First page content</p>')('body').html().trim());
+        expect(result.get('second.html').content).toEqual(cheerio.load('<p>Second page content</p>')('body').html().trim());
       })
       .fin(testDone)
       .done();
@@ -59,8 +60,8 @@ describe(__filename, function() {
       .withPage('subdirectory/also_nested', 'This page is also in the directory `subdirectory`.', 1)
       .create()
       .then(function(result) {
-        expect(result.get('subdirectory/nested.html').content).toEqual('<p>This page is in the directory <code>subdirectory</code>.</p>');
-        expect(result.get('subdirectory/also_nested.html').content).toEqual('<p>This page is also in the directory <code>subdirectory</code>.</p>');
+        expect(result.get('subdirectory/nested.html').content).toEqual(cheerio.load('<p>This page is in the directory <code>subdirectory</code>.</p>')('body').html().trim());
+        expect(result.get('subdirectory/also_nested.html').content).toEqual(cheerio.load('<p>This page is also in the directory <code>subdirectory</code>.</p>')('body').html().trim());
       })
       .fin(testDone)
       .done();

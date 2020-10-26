@@ -1,18 +1,18 @@
 language: node_js
 sudo: false
 node_js:
-- '0.10'
-- '0.12'
-- '4.1'
-- '4.0'
+- '10'
+- '12'
+- '14'
+- '15'
 before_script:
 - gitbook install
 after_script: npm run coverage
 deploy:
   provider: npm
-  email: todvora@gmail.com
+  email: vowstar@gmail.com
   api_key:
-    secure: njIibQFEKnpUqSoxI1QLVAi+MH4mvkWVJqhho4DdMM506I/rz/NqHH7e0DF4KKLugtLUUlnAU+SAI5Gns6qQcXYsyS+5miUMwOupQ1e6fXJ6RWS1qXdi78nyDPnIpI8XQKJb8CesiGpxbBeQ2hrh3QbMmhBh2PVS8I9tFrpTKvukgIHCLztUKfkowNGorpOsLxl8Dcqw2vLL0vNdmOYyTkj3NRTDFjTyutjS3+BT/N7BtxqHl39IjPOILhZjXPRoR2lOu348P3we0VooYwR1T34wvVtV2w7fkTBpBK56B/lRGnWkA+ypzomLMF5qZX/tLKrvHtzqAlphxBOyh0396VyihouYv1Yu2hZCtQnWi36xnlRAgXIsd/WTgR6R7NJW1Spt5YEJUTxwn0s1UTMk7vnHncNX5IG0KsZb9IJI4yPK7An4i6DLFxri/AAiuSyADhnRUBweVL2MOGcHWIQBoNbAtbabDNvhvYgo09UXCv8DcMRPsoV8B3wdCWSdKY65Gy0vz47PsmPvxE+P1396svhCLcjHK8sF+OHiOfcnHHjuDfoam1xkuLL4mV9iLkIo3cST5yE655cDuX4LrkBrj8bmFyx+YCetSkVJ3/E75csIkBxOFhxHWjHv4owcgE13FTyEU0h9ME7zVG6hvS3hxa4fyJKGgnFMq2vXaplznnE=
+    secure: XvNLWwBnX8CyC9gYPHVvzifwqKmLJAMpi5a6t7cnO2wgzcfNuwIPNw3ou205tKE/2JpEt0Ptq6+wD8cY+vlgxwCRDdAAFPCNcANFK91OfyU3gbnTpczYuwzRwDRa+PXemwwdE8Y2+f3Uj3eBZu6Zxtn9bkIdHOWo11tp0Y3z+I0qM9EHQRp0WxOctK811PJmjJ76AUFs9UWzn9AZRWUsDXqb6oEVkvvtJ7uVPoWptAZfj0GOIVQ9/pjpAnw8ltn4wSWiK9d1pTYFm6ahCQd99X7194pFbw8oo1lTv5km9PsyiJfbQC1wjCXc5fEQVR6WJGT3ReCXdGZzi2Ta2zzGMKSyD/ZcjAYRBo36kPV+LqFpYEeg8aNUKbAZBTpV6cV6S7bCVHj9XBFVSlDNmjWPbBVsjC2xOwjZ869A4v8Wt1Q63ruHucjaDUuIEXoCnjlUYjhhiU6+AaCpLOFx3t1HxYRs0YAssJ1lwTBVbBLkTHX3pdouWSmoDYNrSun2sSLgzSq7AO2EXKwZqRzeuSZ2S6NRYNPS8Xh+bvSEe6oV5QiTT08owX+z/V9QK9s7V4jCoYSepJ1h/fny3K1M7twI6wgCq5AsVitk26VPdjQ0PfnpIP7+lyh3GdKgmlFsGcbIiHI2aEOmVfxeN4Z2Ijtl1skiu5mUyExGgsemW9s+BK0=
   on:
     tags: true
-    repo: todvora/gitbook-tester
+    repo: vowstar/honkit-tester
