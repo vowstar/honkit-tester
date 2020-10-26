@@ -6,7 +6,7 @@ node_js:
 - '14'
 - '15'
 before_script:
-- gitbook install
+- npm -v && node -v
 after_script: npm run coverage
 deploy:
   provider: npm
