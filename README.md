@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/vowstar/honkit-tester.svg?branch=master)](https://travis-ci.org/vowstar/honkit-tester)
 [![Coverage Status](https://coveralls.io/repos/github/vowstar/honkit-tester/badge.svg?branch=master)](https://coveralls.io/github/vowstar/honkit-tester?branch=master)
-[![npm version](https://badge.fury.io/js/honkit-tester.svg)](https://badge.fury.io/js/honkit-tester)
+[![NPM Version](https://badge.fury.io/js/honkit-tester.svg)](https://badge.fury.io/js/honkit-tester)
 [![Dependencies Status](https://david-dm.org/vowstar/honkit-tester/status.svg)](https://david-dm.org/vowstar/honkit-tester/)
 [![DevDependencies Status](https://david-dm.org/vowstar/honkit-tester/dev-status.svg)](https://david-dm.org/vowstar/honkit-tester/#info=devDependencies)
+[![NPM Downloads](https://img.shields.io/npm/dm/honkit-tester.svg?style=flat)](https://www.npmjs.org/package/honkit-tester)
 
 This is a fork of [gitbook-tester((https://github.com/todvora/gitbook-tester)](https://github.com/todvora/gitbook-tester), port to honkit.
 
