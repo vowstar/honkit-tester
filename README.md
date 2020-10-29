@@ -9,8 +9,8 @@
 
 This is a fork of [gitbook-tester(https://github.com/todvora/gitbook-tester)](https://github.com/todvora/gitbook-tester), port to honkit.
 
-No more mocking of ```npx honkit build```! Verify your gitbook-plugin against a real, up-to-date
-version of gitbook. This integration framework creates a temporary book, attaches your local gitbook plugin, runs ```npx honkit build``` and returns the parsed pages content.
+No more mocking of ```npx honkit build```! Verify your honkit-plugin against a real, up-to-date
+version of honkit. This integration framework creates a temporary book, attaches your local honkit plugin, runs ```npx honkit build``` and returns the parsed pages content.
 
 All the book resources are generated and executed in a temporary directory (exact location
   depends on your operating system). Resources are cleaned up upon test phase.
@@ -87,7 +87,7 @@ Can also be omitted.
 
 ### .withLocalPlugin(path)
 
-Attach currently tested or developed plugin to the generated gitbook. All locally attached plugins will be automatically added
+Attach currently tested or developed plugin to the generated gitbook files. All locally attached plugins will be automatically added
  to ```book.json``` in the ```plugins``` section.
 
 Should be called
@@ -106,7 +106,8 @@ path to the root of your plugin module. For example:
 
 ### .withLocalDir(path)
 
-Arrach a user assert dir to the generated gitbook. This assert dir will symbolic linked to book dir, and must in the project directory.
+Arrach a user assert dir to the generated gitbook files. This assert dir will
+symbolic linked to book dir, and must in the project directory.
 
 Should be called
 using the following format:
@@ -151,14 +152,6 @@ should output JavaScript object like
   content: '<h1 id="test-me">test me</h1>' }
 
 ```
-
-## Force a specific gitbook version
-
-You can test your plugin against a specific gitbook version by providing an ENV variable like ```GITBOOK_VERSION=2.6.7```. This could be used, for example, in [Travis-CI build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix).
-
-## Debugging
-
-If you wish to see detailed output of the build and the gitbook logs, provide the ENV variable ```DEBUG=true```.
 
 ## Complete test example
 
