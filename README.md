@@ -7,7 +7,7 @@
 [![DevDependencies Status](https://david-dm.org/vowstar/honkit-tester/dev-status.svg)](https://david-dm.org/vowstar/honkit-tester/#info=devDependencies)
 [![NPM Downloads](https://img.shields.io/npm/dm/honkit-tester.svg?style=flat)](https://www.npmjs.org/package/honkit-tester)
 
-This is a fork of [gitbook-tester((https://github.com/todvora/gitbook-tester)](https://github.com/todvora/gitbook-tester), port to honkit.
+This is a fork of [gitbook-tester(https://github.com/todvora/gitbook-tester)](https://github.com/todvora/gitbook-tester), port to honkit.
 
 No more mocking of ```npx honkit build```! Verify your gitbook-plugin against a real, up-to-date
 version of gitbook. This integration framework creates a temporary book, attaches your local gitbook plugin, runs ```npx honkit build``` and returns the parsed pages content.
