@@ -67,4 +67,28 @@ describe(__filename, function() {
       .done();
   });
 
+  it('should add local directory and read them during build', function(testDone) {
+    tester.builder()
+    .withContent('This text is {% include "./test/test.md" %}')
+    .withLocalDir(path.join(__dirname, '..', 'test'))
+    .create()
+    .then(function(result) {
+      expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is included from user local directory!</p>')('body').html().trim());
+    })
+    .fin(testDone)
+    .done();
+  });
+
+  it('should add local plugin and using it during build', function(testDone) {
+    tester.builder()
+    .withContent('This text is {% test %} foobar {% endtest %}')
+    .withLocalPlugin(path.join(__dirname, '..', 'test'))
+    .create()
+    .then(function(result) {
+      expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is from plugin!</p>')('body').html().trim());
+    })
+    .fin(testDone)
+    .done();
+  });
+
 });

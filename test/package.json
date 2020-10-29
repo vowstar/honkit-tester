@@ -1,0 +1,9 @@
+{
+  "name": "gitbook-plugin-test",
+  "version": "1.0.0",
+  "description": "A mock plugin for test",
+  "main": "tester_plugin.js",
+  "engines": {
+    "gitbook": "*"
+  }
+}
