@@ -6,6 +6,7 @@ jasmine.getEnv().defaultTimeoutInterval = 20000;
 // process.env.DEBUG = true;
 
 describe(__filename, function() {
+
   it('should create book and parse content', function(testDone) {
     tester.builder()
     .withContent('#test me \n\n![preview](preview.jpg)')
