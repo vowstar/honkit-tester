@@ -1,4 +1,4 @@
-# Gitbook integration tests framework
+# Honkit integration tests framework
 
 [![Build Status](https://travis-ci.org/vowstar/honkit-tester.svg?branch=master)](https://travis-ci.org/vowstar/honkit-tester)
 [![Coverage Status](https://coveralls.io/repos/github/vowstar/honkit-tester/badge.svg?branch=master)](https://coveralls.io/github/vowstar/honkit-tester?branch=master)
