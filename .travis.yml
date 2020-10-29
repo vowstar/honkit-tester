@@ -5,7 +5,8 @@ node_js:
 - '12'
 before_script:
 - npm -v && node -v
-after_script: npm run coverage
+after_script:
+- npm run coverage
 deploy:
   provider: npm
   email: vowstar@gmail.com
