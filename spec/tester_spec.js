@@ -3,7 +3,6 @@ var path = require('path');
 var cheerio = require('cheerio');
 
 jasmine.getEnv().defaultTimeoutInterval = 20000;
-// process.env.DEBUG = true;
 
 describe(__filename, function() {
 
@@ -87,6 +86,16 @@ describe(__filename, function() {
     .create()
     .then(function(result) {
       expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is from plugin!</p>')('body').html().trim());
+    })
+    .fin(testDone)
+    .done();
+  });
+
+  it('should accept empty values', function(testDone) {
+    tester.builder()
+    .create()
+    .then(function(result) {
+      expect(result.get('index.html').content).toEqual(cheerio.load('')('body').html().trim());
     })
     .fin(testDone)
     .done();
