@@ -3,6 +3,7 @@ sudo: false
 node_js:
 - '10'
 - '12'
+- '14'
 before_script:
 - npm -v && node -v
 after_script:
