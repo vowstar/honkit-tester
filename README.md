@@ -32,7 +32,7 @@ tester.builder()
 Expected output is then:
 
 ```html
-<p>This text is <span class="pg-emphasize pg-emphasize-yellow" style="">highlighted !</span></p>
+<p>This text is <span class="pg-emphasize pg-emphasize-yellow" style>highlighted !</span></p>
 ```
 
 Only the ```<section>``` content of generated pages is currently returned. Do you need
