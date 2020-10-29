@@ -153,6 +153,10 @@ should output JavaScript object like
 
 ```
 
+## Debugging
+
+If you wish to see detailed output of the build and the gitbook logs, provide the ENV variable ``DEBUG=true``.
+
 ## Complete test example
 
 How to write a simple test, using node-jasmine.
