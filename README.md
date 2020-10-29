@@ -104,6 +104,17 @@ path to the root of your plugin module. For example:
 .withLocalPlugin(require('path').join(__dirname, '..'))
 ```
 
+### .withLocalDir(path)
+
+Arrach a user assert dir to the generated gitbook. This assert dir will symbolic linked to book dir, and must in the project directory.
+
+Should be called
+using the following format:
+
+```js
+.withLocalDir(path.join(__dirname, '..', 'assert_dir'))
+```
+
 ### .withFile(path, content)
 
 Allows you to create a file inside the book directory. Just provide the path for the file and string content. For example:
