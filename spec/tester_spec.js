@@ -82,7 +82,7 @@ describe(__filename, function() {
   it('should add local plugin and using it during build', function(testDone) {
     tester.builder()
     .withContent('This text is {% test %} foobar {% endtest %}')
-    .withLocalPlugin(path.join(__dirname, '..', 'test'))
+    .withLocalPlugin(path.join(__dirname, '..', 'test', 'plugin_normal'))
     .create()
     .then(function(result) {
       expect(result.get('index.html').content).toEqual(cheerio.load('<p>This text is from plugin!</p>')('body').html().trim());
