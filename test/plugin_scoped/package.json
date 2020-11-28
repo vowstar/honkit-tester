@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-test-normal",
+  "name": "@honkit/honkit-plugin-test-scope",
   "version": "1.0.0",
   "description": "A mock plugin for test",
   "main": "tester_plugin.js",
