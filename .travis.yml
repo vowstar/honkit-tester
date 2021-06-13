@@ -3,7 +3,7 @@ sudo: false
 node_js:
 - '10'
 - '12'
-- '14'
+- lts/*
 before_script:
 - npm -v && node -v
 after_script:
@@ -18,3 +18,4 @@ deploy:
   on:
     tags: true
     repo: vowstar/honkit-tester
+    node: lts/*
