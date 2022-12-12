@@ -28,7 +28,7 @@
     "cheerio": "^1.0.0-rc.10",
     "fs-extra": "^10.0.0",
     "gitbook-plugin-emphasize": "^1.1.0",
-    "honkit": "^3.7.1",
+    "honkit": "^4.0.4",
     "lodash": "^4.17.21",
     "mkdirp": "^1.0.4",
     "q": "^1.5.1",
