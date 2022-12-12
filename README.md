@@ -1,6 +1,6 @@
 # Honkit integration tests framework
 
-[![Build Status](https://travis-ci.org/vowstar/honkit-tester.svg?branch=master)](https://travis-ci.org/vowstar/honkit-tester)
+[![Build Status](https://github.com/vowstar/honkit-tester/actions/workflows/test.yml/badge.svg)](https://github.com/vowstar/honkit-tester/actions)
 [![Coverage Status](https://coveralls.io/repos/github/vowstar/honkit-tester/badge.svg?branch=master)](https://coveralls.io/github/vowstar/honkit-tester?branch=master)
 [![NPM Version](https://badge.fury.io/js/honkit-tester.svg)](https://badge.fury.io/js/honkit-tester)
 [![NPM Downloads](https://img.shields.io/npm/dm/honkit-tester.svg?style=flat)](https://www.npmjs.org/package/honkit-tester)

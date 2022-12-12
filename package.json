@@ -1,6 +1,6 @@
 {
   "name": "honkit-tester",
-  "version": "1.9.7",
+  "version": "1.9.8",
   "description": "Tester for honkit plugins",
   "main": "index.js",
   "scripts": {
@@ -25,23 +25,20 @@
   "author": "Huang Rui <vowstar@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "fs-extra": "^10.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.1.0",
     "gitbook-plugin-emphasize": "^1.1.0",
     "honkit": "^4.0.4",
     "lodash": "^4.17.21",
     "mkdirp": "^1.0.4",
     "q": "^1.5.1",
     "temp": "^0.9.4",
-    "winston": "^3.3.3"
+    "winston": "^3.8.2"
   },
   "devDependencies": {
-    "coveralls": ">=3.1.1",
-    "jshint": ">=2.13.4",
-    "mocha": "^9.2.1",
+    "coveralls": "^3.1.1",
+    "jshint": "^2.13.6",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0"
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
   }
 }
