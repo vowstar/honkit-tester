@@ -1,6 +1,6 @@
 {
   "name": "honkit-tester",
-  "version": "1.9.10",
+  "version": "1.9.11",
   "description": "Tester for honkit plugins",
   "main": "index.js",
   "scripts": {
